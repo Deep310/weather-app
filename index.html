@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href = 'style.css'>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'intro-lines'>
+            <p id = 'fline'> Hey! What's today's weather in your city? </p>
+            <br>
+            <p id = "sline">Planning for a little trip over the mountains? Heading out for a nice sunbathe at the beach? Make sure</p>
+            <p id = "tline"> the weather doesn't ruin your plans!</p>
+            <br>
+        </div>
+        <div class = 'search-container'>
+            <input id = 'searchbar' type = 'text' placeholder = "Search location.." autocomplete="off">
+            <svg xmlns="http://www.w3.org/2000/svg" id="search-icon" width="30" height="30" viewBox="0 0 16 16"><path d="M15.784 13.68l-4.096-4.096c.585-.955.94-2.067.94-3.27a6.315 6.315 0 1 0-6.314 6.314 6.253 6.253 0 0 0 3.27-.937l4.096 4.094a.751.751 0 0 0 1.052 0l1.052-1.052a.75.75 0 0 0 0-1.053zm-9.47-3.157a4.21 4.21 0 1 1 0-8.419 4.21 4.21 0 0 1 0 8.42z"></path></svg> 
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <div id = "hi" class="toggle-display">
+        <p id = 'city'>City :</p>
+        <p id = 'a1'></p>
+        <p id = 'coords'>Latitude & Longitude :</p>
+        <p id = 'a2'></p>
+        <p id = 'weather'>Weather Today:</p>
+        <p id = 'a3'></p>
+        <p id = 'temp'>Temperature :</p>
+        <p id = 'a4'></p>
+        <p id = 'feel'>Feels like :</p>
+        <p id = 'a5'></p>
+        <p id = 'min'>Minimum Temerature :</p>
+        <p id = 'a6'></p>
+        <p id = 'max'>Maximum Temperature :</p>
+        <p id = 'a7'></p>
+        <p id = 'wind'>Wind speed :</p>
+        <p id = 'a8'></p>
+        <p id = 'rain'>Chance of rain :</p>
+        <p id = 'a9'></p>
+        <p id = 'humidity'>Humidity in air :</p>
+        <p id = 'a10'></p>
+        
+    </div>
+    <div class = 'container-2'>
+        <!-- box1 of grid-->
+        <div class = 'box-1'>
+            <div class='img1'>
+                <img src = "box1-beach.jpg" alt = ''> 
+            </div>
+            <div class='des1'>
+                <p>Check out how the weather is in more than 200,000 cities globally. Get the live coverage of weather globally with a <b><em>single click</em></b> and it is totally free!</p>
+            </div>
+        </div>
+        <!-- finished box-1-->
+
+        <!-- box-2 of grid-->
+        <div class = 'box-2'>
+            <div class='img2'>
+                <img src = "box2-thermometer.jpg" alt = ''> 
+            </div>
+            <div class='des2'>
+                <p>Is it too hot to go to the beach and enjoy a nice warm sunbathe? Find out the current <b><em>minimum</em></b> and <b><em>maximum </em></b>temperatures in your favorite city now! </p>
+            </div>
+        </div>
+        <!-- box2 done-->
+
+        <!-- box-3 of grid-->
+        <div class = 'box-3'>
+            <div class='img3'>
+                <img src = "box3-rainy.jpg" alt = ''> 
+            </div>
+            <div class='des3'>
+                <p>Wanna go out in a park for a nice barbeque in a nearby park with the family? Check out how likely it is <b><em>to rain</em></b> in your city and make sure you <b><em>get the most</em></b> out of your plans!</p>
+            </div>
+        </div>
+        <!-- box3 done-->
+
+        <!-- box-4 of grid-->
+        <div class = 'box-4'>
+            <div class='img4'>
+                <img src = "box4-city.jpg" alt = ''> 
+            </div>
+            <div class='des4'>
+                <p>And it doesn't stop there! You can also find out the <b><em>currnet wind speed, latitide and longitude</em></b> of your city! Now what are you waiting for? Search your favorite city now!</p>
+            </div>
+        </div>
+        <!-- done box4-->
+    </div>
+
+    <div class = 'footer'>
+        <p>Made and designed with 💖 by Deep Parekh.</p>
+    </div>
+    <script src = 'script.js'></script>
+</body>
+</html>

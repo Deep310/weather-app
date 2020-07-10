@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*the first main container - it has the background image */
+.container {
+    background-image: url('sunset.png');
+    background-size: cover;
+    border-bottom: 2px solid #ec5f17;
+}
+
+.intro-lines{
+    padding: 50px; 
+}
+
+#fline{
+    align-self: flex-start;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sline{
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tline {
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+/*formatting the searchbar*/
+#searchbar{
+    width: 80vw;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+}
+
+#search-icon {
+    margin: 0 10px;
+    fill: red;
+}
+#search-icon:hover{
+    cursor: pointer;
+}
+
+/*styling of container-2*/
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "box1 box2 box3 box4";
+    column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #5f6aa5;
+    padding: 50px;
+}
+
+/*formatting box-1*/
+.box-1 {
+    grid-area: box1;
+    border: 3px solid #ec5f17;
+    box-shadow: 6px 6px 6px 2px rgb(43, 42, 42);
+}
+.box-1 .img1{
+    background-color: white;
+}
+.box-1 img{
+    width: 100%;
+    height: auto;
+}
+.box-1 .des1 {
+    padding-left: 5px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*formatting box-2*/
+.box-2 {
+    grid-area: box2;
+    border: 3px solid #ec5f17;
+    box-shadow: 6px 6px 6px 2px rgb(43, 42, 42);
+}
+.box-2 .img2{
+    background-color: white;
+}
+.box-2 img {
+    width: 100%;
+    height: auto;
+}
+.box-2 .des2 {
+    padding-left: 5px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*formatting box-3*/
+.box-3 {
+    grid-area: box3;
+    border: 3px solid #ec5f17;
+    box-shadow: 6px 6px 6px 2px rgb(43, 42, 42);
+}
+.box-3 .img3{
+    background-color: white;
+}
+.box-3 img {
+    width: 100%;
+    height: auto;
+}
+.box-3 .des3 {
+    padding-left: 5px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*formatting box-4*/
+.box-4 {
+    grid-area: box4;
+    border: 3px solid #ec5f17;
+    box-shadow: 6px 6px 6px 2px rgb(43, 42, 42);
+}
+.box-4 .img4{
+    background-color: white;
+}
+.box-4 img {
+    width: 100%;
+    height: auto;
+}
+.box-4 .des4 {
+    padding-left: 5px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*formatting for answers container*/
+.toggle-display{
+    display: none;
+}
+.answer-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "city a1"
+                        "coords a2"
+                        "weather a3"
+                        "temp a4"
+                        "feel a5"
+                        "min a6"
+                        "max a7"
+                        "wind a8"
+                        "rain a9"
+                        "humidity a10";
+
+    row-gap:20px;
+    column-gap: 15px;
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+    background-color: #3c3d47;
+    border-bottom: 2px solid #ec5f17;
+    font-family: 'Poppins', sans-serif;
+}
+
+#city{
+    grid-area: city;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a1{
+    grid-area: a1;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#coords {
+    grid-area: coords;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a2{
+    grid-area: a2;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#weather{
+    grid-area: weather;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a3{
+    grid-area: a3;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#temp{
+    grid-area:temp;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a4{
+    grid-area: a4;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#feel{
+    grid-area: feel;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a5{
+    grid-area: a5;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#min{
+    grid-area: min;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a6{
+    grid-area: a6;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#max{
+    grid-area: max;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a7{
+    grid-area: a7;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#wind{
+    grid-area: wind;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a8{
+    grid-area: a8;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#rain{
+    grid-area: rain;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a9{
+    grid-area: a9;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#humidity{
+    grid-area: humidity;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+#a10{
+    grid-area: a10;
+    padding:10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #df8f45;
+}
+
+.footer{
+    padding: 20px;
+    background-color: #1a1b1d;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*media queries*/
+@media screen and (max-width:762px){
+    .container-2{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "box1 box2"
+            "box3 box4";
+        row-gap: 20px;
+    }
+}
