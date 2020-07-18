@@ -8,7 +8,6 @@ btn.addEventListener('click', function(){
         let cityname = document.getElementById('searchbar').value;
         getWeather(cityname)
             .then( function(response){
-                console.log(response);
                 return response;  
             })
             .then(function newResponse(response){
@@ -42,10 +41,9 @@ btn.addEventListener('click', function(){
 
  
 async function getWeather(city){
-    const apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bf1bedbf24ebcc81a53dcd314db85f38`;
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bf1bedbf24ebcc81a53dcd314db85f38`;
     const response = await fetch(apiURL);
     const data = await response.json();
-    console.log(data);
     return(data);
 }
       
