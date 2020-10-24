@@ -9,7 +9,15 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/*the first main container - it has the background image */
+.header{
+    background-color: #1a1b1d;
+    color: yellow;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*the main container - it has the background image */
 .container {
     background-image: url('sunset.png');
     background-size: cover;
