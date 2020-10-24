@@ -38,12 +38,14 @@ body{
     align-self: flex-start;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 #tline {
     align-self: flex-start;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .search-container {
